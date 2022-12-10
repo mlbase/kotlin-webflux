@@ -1,6 +1,4 @@
-package com.portfolio.flux.example
-
-import com.fasterxml.jackson.annotation.JsonIgnore
+package com.portfolio.flux.model
 
 class Greeting(
         private var message: String
