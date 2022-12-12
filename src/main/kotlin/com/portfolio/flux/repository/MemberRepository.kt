@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface MemberRepository: CoroutineCrudRepository<Member, Long> {
+
+    suspend fun findByEmail(email: String?){}
 }

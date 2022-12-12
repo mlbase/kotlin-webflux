@@ -8,7 +8,7 @@ import kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClass
 
 @Table
 data class Member(@Id
-                  val id: String? = null,
+                  val id: Integer? = null,
                   val userName: String? = null,
                   var password: String? = null,
                   var email: String? = null) {
