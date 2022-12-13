@@ -2,13 +2,10 @@ package com.portfolio.flux.model
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Table
-import org.springframework.format.annotation.DateTimeFormat
-import javax.annotation.processing.Generated
-import kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClass
 
 @Table
 data class Member(@Id
-                  val id: Integer? = null,
+                  val id: Long? = null,
                   val userName: String? = null,
                   var password: String? = null,
                   var email: String? = null) {
