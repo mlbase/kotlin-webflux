@@ -5,7 +5,7 @@ import org.springframework.data.relational.core.mapping.Table
 
 @Table
 data class Member(@Id
-                  val id: Long? = null,
+                  val id: String? = null,
                   val userName: String? = null,
                   var password: String? = null,
                   var email: String? = null) {

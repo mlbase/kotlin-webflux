@@ -8,11 +8,11 @@ import org.springframework.data.relational.core.mapping.Table
 data class Test(
         @Id
         @Column("id")
-        val id: Int,
+        var id: String?,
         @Column("name")
-        val name: String?)
+        var name: String?)
 {
-    constructor(id: Int) : this(id, null){
+    constructor(id: String?) : this(id, null){
 
     }
 }
