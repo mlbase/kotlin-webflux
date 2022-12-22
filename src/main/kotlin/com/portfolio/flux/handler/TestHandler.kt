@@ -43,7 +43,7 @@ class TestHandler {
     fun putTest(req: ServerRequest): Mono<ServerResponse> {
         var id = req.pathVariable("id")
 
-        var test = Test(id = id.toInt())
+        var test = Test(id = id.toString())
         return testRepository.delete(test)
                 .then(ServerResponse.ok().body(BodyInserters.fromValue("삭제하였습니다.")))
     }
