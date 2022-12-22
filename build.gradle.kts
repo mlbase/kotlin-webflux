@@ -20,6 +20,7 @@ repositories {
 dependencies {
 	implementation("io.netty:netty-resolver-dns-native-macos:4.1.79.Final:osx-aarch_64")
 	implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
+	implementation("org.springframework.boot:spring-boot-starter-security")
 // https://mvnrepository.com/artifact/dev.miku/r2dbc-mysql
 	implementation("dev.miku:r2dbc-mysql:0.8.2.RELEASE")
 	implementation("org.springframework.boot:spring-boot-starter-data-redis")
