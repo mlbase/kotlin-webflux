@@ -6,9 +6,10 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface MemberRepository: CoroutineCrudRepository<Member, String> {
-    suspend fun findOne(id: String): Member
 
-    fun findByUsername(username: String): Member
+    override suspend fun findById(id: String): Member
+
+    fun findByUserName(username: String): Member
 
     suspend fun findByEmail(email: String): Member
 }
